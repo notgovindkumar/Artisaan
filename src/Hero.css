@@ -1,4 +1,5 @@
 .page-shell {
+  background-color: #ffe5c2;
   min-height: 100vh;
   width: 100vw;
   background: #fff;
@@ -82,10 +83,13 @@
 
 
 .hero-content h1 {
-  font-size: 2.55rem;
-  margin: 0.45em 0 1.15em 0;
+  font-size: 2.6rem;
   font-weight: 700;
-  line-height: 1.50;
+  color: #fff5d3;
+  text-shadow: 0 1.3px 3px rgba(0, 0, 0, 0.3), 0 0 8px #ffe099aa;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.6rem;
+  transition: text-shadow 0.3s ease;
 }
 
 .highlight {
@@ -95,29 +99,259 @@
   letter-spacing: 0.07em;
 }
 
+.hero-content h1:hover {
+  text-shadow: 0 3px 15px #ffaa005f, 0 0 18px #ffbc32d9;
+}
+
+.hero-content .highlight {
+  font-weight: 900;
+  color: #ffe099;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px #ffb700aa;
+  transition: text-shadow 0.3s ease;
+}
+
+.hero-content .highlight:hover {
+  text-shadow: 0 0 25px #ffc833ff;
+}
+
 .hero-desc {
-  color: #fff2d3;
-  font-size: 1.01rem;
-  line-height: 1.38;
-  margin-bottom: 2.32em;
+  color: #fff5d3;
+  font-size: 1rem;
+  line-height: 1.48;
+  max-width: 380px;
+  margin: 0 auto 2rem auto;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease;
+}
+
+.hero-desc:hover {
+  color: #fff;
 }
 
 .hero-btn {
-  background: transparent;
-  color: #ffecca;
-  border: 1.6px solid #ffecca;
-  border-radius: 25px;
-  padding: 0.88rem 2.6rem;
-  letter-spacing: 0.13em;
-  font-size: 1.14rem;
-  font-weight: 600;
+  font-family: inherit;
+  background: linear-gradient(90deg, #fad172 15%, #fbb636 95%);
+  border: 2px solid #fbb636;
+  padding: 0.85rem 3rem;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #191a17;
   cursor: pointer;
-  transition: background 0.16s, color 0.16s;
+  box-shadow:
+    0 4px 8px #ffe099,
+    inset 0 -1.5rem 12px #ffe099;
+  transition:
+    background 0.3s ease,
+    box-shadow 0.4s ease,
+    color 0.3s ease,
+    border-color 0.25s ease;
 }
 
-.hero-btn:hover {
-  background: #ffecca;
-  color: black;
+.hero-btn:hover,
+.hero-btn:focus {
+  background: linear-gradient(90deg, #fad172 15%, #fbb636 95%);
+  color: #fff5d3;
+  border-color: #000000; /* black border on hover instead of blue */
+  box-shadow:
+    0 7px 16px #ebc049ec,
+    inset 0 -2.2rem 12px #fabb26cc,
+    0 0 18px #000000aa;
+  outline: none;
+}
+
+.hero-btn:active {
+  transform: scale(0.96);
+  box-shadow: 0 3px 15px #ffb800c7, inset 0 -1rem 10px #d29700cc;
+}
+
+.art-gallery {
+  max-width: 1160px;
+  margin: 3.8rem auto 6rem auto;
+  padding: 0 1.2rem;
+}
+
+.gallery-title {
+  font-size: 2.42rem;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #ffa600;
+  font-weight: 800;
+  margin-bottom: 2.45rem;
+  text-align: left;
+  letter-spacing: 0.01em;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.3rem;
+  align-items: start;
+}
+
+.gallery-card {
+  background: #ffe5c2;
+  border-radius: 19px;
+  box-shadow: 0 4px 28px 0 #23211a0b;
+  transition: 
+    box-shadow 0.34s cubic-bezier(.55,1.3,.48,.93),
+    transform 0.4s cubic-bezier(.41,1.16,.51,1.01);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+  min-width: 0;
+  will-change: transform, box-shadow;
+  position: relative;
+}
+
+.gallery-card:hover {
+  transform: scale(1.037) translateY(-9px);
+  box-shadow: 0 12px 40px #ffe099cc, 0 3px 32px #ffa600cc;
+  z-index: 2;
+}
+.img-wrap {
+  padding: 0.7rem 0.7rem 0 0.7rem;
+  background: #ffe09944;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+}
+.gallery-card img {
+  display: block;
+  max-width: 100%;
+  max-height: 210px;
+  object-fit: contain;
+  border-radius: 14px 14px 0 0;
+}
+.gallery-meta {
+  padding: 1.4rem 1.2rem 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  background: transparent;
+}
+
+.meta-by {
+  font-size: 0.85rem;
+  letter-spacing: 0.09em;
+  color: #c68600;
+  font-weight: 600;
+  margin-bottom: 0.28rem;
+}
+
+.gallery-meta h3 {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #19170b;
+  margin-bottom: 0.15rem;
+}
+
+.meta-desc {
+  font-size: 0.97rem;
+  color: #6a5733;
+  margin-bottom: 1.31rem;
+  min-height: 38px;
+}
+
+.meta-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.meta-price {
+  color: #ffa600;
+  font-size: 1.19rem;
+  font-weight: 700;
+}
+.meta-action {
+  font-size: 1.03rem;
+  font-family: inherit;
+  background: transparent;
+  border: 2px solid #ffe099;
+  color: #ffa600;
+  border-radius: 24px;
+  padding: 0.47em 1.36em;
+  transition: 
+    background 0.3s, 
+    color 0.3s, 
+    border-color 0.3s, 
+    box-shadow 0.32s cubic-bezier(.6,.1,.4,1.3);
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  outline: none;
+  box-shadow: none;
+  margin-left: 1.3em;
+}
+.meta-action:hover, .gallery-card:hover .meta-action {
+  background: linear-gradient(100deg,#fff5d3 22%,#ffe099 98%);
+  color: #19170b;
+  border-color: #ffa600;
+  box-shadow: 0 2px 18px #ffe09955;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem;
+  }
+}
+@media (max-width: 700px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.app-specs {
+  max-width: 1100px;
+  margin: 5rem auto 6rem auto;
+  padding: 0 1rem;
+  color: #fff5d3;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  text-align: center;
+}
+.specs-title {
+  font-size: 2.9rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  color: #ffa600;
+  text-shadow: 0 2px 8px #5c4203aa;
+}
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2.8rem;
+}
+.spec-card {
+  background: rgba(255, 224, 153, 0.1);
+  border: 2px solid #ffe099;
+  border-radius: 15px;
+  padding: 1.8rem 1.5rem;
+  box-shadow: 0 4px 26px #9c7b20aa inset;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.spec-card:hover {
+  background: rgba(255, 224, 153, 0.25);
+  box-shadow: 0 6px 34px #e4b411bb inset;
+}
+.spec-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffc85d;
+  margin-bottom: 1rem;
+}
+.spec-card p {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #fff8df;
+  line-height: 1.5;
+  text-shadow: 0 1px 3px #3a2201aa;
 }
 
 
