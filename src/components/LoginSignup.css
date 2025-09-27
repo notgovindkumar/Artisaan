@@ -1,0 +1,47 @@
+.auth-bg {
+  background: #181818;
+  transition: background 0.5s;
+  min-height: 99vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.auth-choice button {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  padding: 1.2rem 2rem;
+  margin: 1.2rem;
+  border: none;
+  background: linear-gradient(90deg, var(--accent), var(--secondary));
+  color: #181818;
+  border-radius: 25px;
+  font-size: 1.25rem;
+  box-shadow: 0 2px 10px #0005;
+  transition: background 0.5s, color 0.4s;
+  cursor: pointer;
+}
+.login-btn:hover {
+  background: linear-gradient(90deg, #FF9800, #FFD54F 80%);
+  color: #fff;
+}
+.signup-btn:hover {
+  background: linear-gradient(90deg, #FF8C00, #FFD700 80%);
+  color: #fff;
+}
+.form-rollout {
+  animation: slidein 0.7s forwards;
+  background: #181818;
+  color: #FFA600;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 20rem;
+  margin: 1.2rem auto;
+}
+.collapsed {
+  display: none;
+}
+@keyframes slidein {
+  0% { opacity: 0; transform: translateY(-60px) scaleX(0.6); }
+  70% { opacity: 1; transform: translateY(-14px) scaleX(1.12); }
+  100% { opacity: 1; transform: translateY(0) scaleX(1); }
+}
