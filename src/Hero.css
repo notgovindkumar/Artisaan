@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.9rem 4vw 0.9rem 4vw;
+  padding: 1.2rem 3vw;
   font-family: 'Trebuchet MS', Arial, sans-serif;
   font-weight: 700;
   position: relative;
@@ -153,7 +153,7 @@
 .hero-btn:focus {
   background: linear-gradient(90deg, #fad172 15%, #fbb636 95%);
   color: #fff5d3;
-  border-color: #000000; /* black border on hover instead of blue */
+  border-color: #fad172; /* black border on hover instead of blue */
   box-shadow:
     0 7px 16px #ebc049ec,
     inset 0 -2.2rem 12px #fabb26cc,
@@ -190,7 +190,7 @@
 }
 
 .gallery-card {
-  background: #ffe5c2;
+  background: #f6c2ac;
   border-radius: 19px;
   box-shadow: 0 4px 28px 0 #23211a0b;
   transition: 
@@ -308,70 +308,84 @@
 }
 
 
-
-
-.app-intro {
-  max-width: 1000px;
-  margin: 4rem auto 6rem auto;
-  padding: 1rem 1.5rem;
-  color: #fff5d3;
+.app-intro-merged {
+  max-width: 1050px;
+  margin: 5rem auto 6rem auto;
+  padding: 3.2rem 2rem;
+  background-color: #a9322640; /* soft red translucent as requested */
+  border-radius: 22px;
+  box-shadow: 0 10px 48px #fc8772 inset;
+  color: #1a130c; /* dark warm black for text */
   font-family: 'Trebuchet MS', Arial, sans-serif;
-  background: rgba(23, 43, 38, 0.9);
-  border-radius: 20px;
-  box-shadow: 0 8px 26px #1f2e1ddd;
   text-align: center;
-}
-.app-intro h2 {
-  font-size: 2.8rem;
-  font-weight: 800;
-  color: #ffa600;
-  margin-bottom: 2rem;
-  letter-spacing: 0.05em;
-  text-shadow: 0 3px 10px #6d6609aa;
-}
-.intro-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 3rem;
-}
-.intro-text {
-  flex: 1 1 420px;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.13rem;
   line-height: 1.52;
-  max-width: 640px;
-  color: #fff5d3;
-  text-shadow: 0 1px 3px #212017aa;
+  user-select: text; /* selectable text */
 }
-.intro-text p {
-  margin-bottom: 1.35rem;
+
+.app-intro-merged h2 {
+  color: #1c0f07;
+  font-weight: 900;
+  font-size: 2.75rem;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 4px #cca495aa;
 }
-.intro-images {
-  flex: 1 1 240px;
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
+
+.app-intro-merged p {
+  margin-bottom: 1.8rem;
 }
-.intro-images img {
-  max-width: 65px;
-  filter: drop-shadow(1px 1px 3px #2e330197);
-  transition: transform 0.4s ease;
-  cursor: default;  
+
+.app-intro-merged ul {
+  margin-left: 1.4rem;
+  margin-bottom: 2.2rem;
+  list-style-type: disc;
+  color: #3e2517;
+  font-weight: 600;
 }
-.intro-images img:hover {
-  transform: scale(1.2);
-  filter: drop-shadow(2px 3px 7px #ffd54fcc);
+
+.app-intro-merged ul li {
+  margin: 0.55rem 0;
 }
-@media (max-width: 680px) {
-  .intro-content {
-    flex-direction: column;
+
+@media (max-width: 700px) {
+  .app-intro-merged {
+    margin: 3.5rem auto 4.5rem auto;
+    padding: 2rem 1.2rem;
+    font-size: 1rem;
   }
-  .intro-images {
-    gap: 1.4rem;
+  .app-intro-merged h2 {
+    font-size: 2.1rem;
+    margin-bottom: 1.4rem;
   }
 }
+
+.app-intro-merged {
+  /* existing styles */
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background-color 0.4s ease;
+  cursor: default;
+}
+
+.app-intro-merged:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow:
+    0 14px 55px #fc877233 inset,
+    0 0 24px #fc877299;
+  background-color: #ba342d4a; /* slightly more intense deep red translucent */
+  cursor: pointer;
+}
+
+.app-intro-merged p,
+.app-intro-merged ul li {
+  transition: color 0.3s ease;
+}
+.app-intro-merged:hover p,
+.app-intro-merged:hover ul li {
+  color: #2d150d;
+}
+
+
 
 
 

@@ -34,29 +34,20 @@ export default function Hero() {
       </main>
 
 
-      <section className="app-intro">
-  <h2>Why Artisaan Stands Out</h2>
-  <div className="intro-content">
-    <div className="intro-text">
-      <p>
-        At Artisaan, we empower local artisans and preserve Indian cultural heritage by providing an AI-powered,
-        multilingual platform tailored for authentic craftsmanship and sustainable growth.
-      </p>
-      <p>
-        Unique features like dynamic market intelligence, seamless digital storytelling, and regional language support
-        make our platform the trusted digital home for millions of artisans.
-      </p>
-      <p>
-        Join us as we transform traditional arts into thriving enterprises, bridging craftsmanship with modern ecommerce.
-      </p>
-    </div>
-    <div className="intro-images">
-      <img src="./assets/handcraft-icon.svg" alt="Handcraft Icon" />
-      <img src="./assets/culture-icon.svg" alt="Culture Icon" />
-      <img src="./assets/ai-icon.svg" alt="AI Icon" />
-    </div>
-  </div>
-</section>
+
+      <section className="app-intro-merged">
+        <h2>Paint the world with color of Art...</h2><br />
+        <p>
+          Artisaan is a one-stop platform empowering over 20 million Indian artisans through:
+        </p>
+          AI-powered tools that generate professional listings and authentic storytelling <br />
+          Support for 22+ Indian languages and voice-driven interactions, breaking digital barriers <br />
+          Dynamic market intelligence for pricing, demand forecasting and inventory insights <br />
+          A commitment to preserving centuries-old craft heritage globally through storytelling <br />
+        <p>
+          By bridging traditional arts with modern technology, Artisaan revolutionizes artisan reach and livelihood in an eco-friendly and culturally conscious manner.
+        </p>
+      </section>
 
 
 
