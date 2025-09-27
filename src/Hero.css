@@ -207,7 +207,7 @@
 
 .gallery-card:hover {
   transform: scale(1.037) translateY(-9px);
-  box-shadow: 0 12px 40px #ffe099cc, 0 3px 32px #ffa600cc;
+  box-shadow: 0 12px 40px #f6c2ac, 0 3px 32px #f6b89d;
   z-index: 2;
 }
 .img-wrap {
@@ -271,8 +271,8 @@
   font-size: 1.03rem;
   font-family: inherit;
   background: transparent;
-  border: 2px solid #ffe099;
-  color: #ffa600;
+  border: 2px solid #e68d5a;
+  color: #ec7d3d;
   border-radius: 24px;
   padding: 0.47em 1.36em;
   transition: 
@@ -288,10 +288,10 @@
   margin-left: 1.3em;
 }
 .meta-action:hover, .gallery-card:hover .meta-action {
-  background: linear-gradient(100deg,#fff5d3 22%,#ffe099 98%);
+  background: linear-gradient(100deg,#f7c3a4 22%,#f3b592 98%);
   color: #19170b;
-  border-color: #ffa600;
-  box-shadow: 0 2px 18px #ffe09955;
+  border-color: #e68d5a;
+  box-shadow: 0 2px 18px #e68d5a;
 }
 
 /* Responsive */
