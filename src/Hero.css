@@ -67,7 +67,7 @@
   border-radius: 50%;
   background: rgba(23, 43, 38, 0.96);
   border: 1.6px solid #efe7b1;
-  box-shadow: 0 7px 32px #00000022;
+  box-shadow: 0 7px 32px #1a0e0422;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,7 +86,7 @@
   font-size: 2.6rem;
   font-weight: 700;
   color: #fff5d3;
-  text-shadow: 0 1.3px 3px rgba(0, 0, 0, 0.3), 0 0 8px #000000aa;
+  text-shadow: 0 1.3px 3px rgba(0, 0, 0, 0.3), 0 0 8px #ffe099aa;
   letter-spacing: 0.06em;
   margin-bottom: 0.6rem;
   transition: text-shadow 0.3s ease;
@@ -100,19 +100,19 @@
 }
 
 .hero-content h1:hover {
-  text-shadow: 0 3px 15px #0000005f, 0 0 18px #ffbc32d9;
+  text-shadow: 0 3px 7px #ffaa005f, 0 0 18px #ffbc32d9;
 }
 
 .hero-content .highlight {
   font-weight: 900;
   color: #ffe099;
   letter-spacing: 0.1em;
-  text-shadow: 0 0 10px #000000aa;
+  text-shadow: 0 0 10px #ffb700aa;
   transition: text-shadow 0.3s ease;
 }
 
 .hero-content .highlight:hover {
-  text-shadow: 0 0 25px rgb(0, 0, 0);
+  text-shadow: 0 0 12px #ffc833ff;
 }
 
 .hero-desc {
