@@ -308,50 +308,70 @@
 }
 
 
-.app-specs {
-  max-width: 1100px;
-  margin: 5rem auto 6rem auto;
-  padding: 0 1rem;
+
+
+.app-intro {
+  max-width: 1000px;
+  margin: 4rem auto 6rem auto;
+  padding: 1rem 1.5rem;
   color: #fff5d3;
   font-family: 'Trebuchet MS', Arial, sans-serif;
+  background: rgba(23, 43, 38, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 8px 26px #1f2e1ddd;
   text-align: center;
 }
-.specs-title {
-  font-size: 2.9rem;
+.app-intro h2 {
+  font-size: 2.8rem;
   font-weight: 800;
-  margin-bottom: 3rem;
   color: #ffa600;
-  text-shadow: 0 2px 8px #5c4203aa;
+  margin-bottom: 2rem;
+  letter-spacing: 0.05em;
+  text-shadow: 0 3px 10px #6d6609aa;
 }
-.specs-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2.8rem;
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
-.spec-card {
-  background: rgba(255, 224, 153, 0.1);
-  border: 2px solid #ffe099;
-  border-radius: 15px;
-  padding: 1.8rem 1.5rem;
-  box-shadow: 0 4px 26px #9c7b20aa inset;
-  transition: background 0.3s, box-shadow 0.3s;
-}
-.spec-card:hover {
-  background: rgba(255, 224, 153, 0.25);
-  box-shadow: 0 6px 34px #e4b411bb inset;
-}
-.spec-card h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #ffc85d;
-  margin-bottom: 1rem;
-}
-.spec-card p {
-  font-size: 1.05rem;
+.intro-text {
+  flex: 1 1 420px;
   font-weight: 500;
-  color: #fff8df;
-  line-height: 1.5;
-  text-shadow: 0 1px 3px #3a2201aa;
+  font-size: 1.1rem;
+  line-height: 1.52;
+  max-width: 640px;
+  color: #fff5d3;
+  text-shadow: 0 1px 3px #212017aa;
 }
+.intro-text p {
+  margin-bottom: 1.35rem;
+}
+.intro-images {
+  flex: 1 1 240px;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.intro-images img {
+  max-width: 65px;
+  filter: drop-shadow(1px 1px 3px #2e330197);
+  transition: transform 0.4s ease;
+  cursor: default;  
+}
+.intro-images img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(2px 3px 7px #ffd54fcc);
+}
+@media (max-width: 680px) {
+  .intro-content {
+    flex-direction: column;
+  }
+  .intro-images {
+    gap: 1.4rem;
+  }
+}
+
 
 

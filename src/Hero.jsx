@@ -34,27 +34,30 @@ export default function Hero() {
       </main>
 
 
-      <section className="app-specs">
-  <h2 className="specs-title">Why Choose Artisaan?</h2>
-  <div className="specs-grid">
-    <div className="spec-card">
-      <h3>AI-Powered Assistance</h3>
-      <p>Advanced AI tools help artisans create professional product listings, optimize descriptions, and reach global buyers easily.</p>
+      <section className="app-intro">
+  <h2>Why Artisaan Stands Out</h2>
+  <div className="intro-content">
+    <div className="intro-text">
+      <p>
+        At Artisaan, we empower local artisans and preserve Indian cultural heritage by providing an AI-powered,
+        multilingual platform tailored for authentic craftsmanship and sustainable growth.
+      </p>
+      <p>
+        Unique features like dynamic market intelligence, seamless digital storytelling, and regional language support
+        make our platform the trusted digital home for millions of artisans.
+      </p>
+      <p>
+        Join us as we transform traditional arts into thriving enterprises, bridging craftsmanship with modern ecommerce.
+      </p>
     </div>
-    <div className="spec-card">
-      <h3>Multilingual Support</h3>
-      <p>Supports 22+ Indian languages with real-time translation and voice interactions for digital inclusion.</p>
-    </div>
-    <div className="spec-card">
-      <h3>Market Intelligence</h3>
-      <p>Dynamic pricing, demand forecasting, and actionable reports help artisans maximize their earnings effectively.</p>
-    </div>
-    <div className="spec-card">
-      <h3>Cultural Preservation</h3>
-      <p>Preserves heritage by showcasing stories and authentic narratives of crafts directly from artisan communities.</p>
+    <div className="intro-images">
+      <img src="./assets/handcraft-icon.svg" alt="Handcraft Icon" />
+      <img src="./assets/culture-icon.svg" alt="Culture Icon" />
+      <img src="./assets/ai-icon.svg" alt="AI Icon" />
     </div>
   </div>
 </section>
+
 
 
       <section className="art-gallery">
