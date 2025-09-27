@@ -1,9 +1,6 @@
-import { useNavigate } from 'react-router-dom';
 import './Hero.css';
 
 export default function Hero() {
-  const navigate = useNavigate();
-
   return (
     <div className="page-shell">
       <nav className="navbar">
@@ -13,26 +10,22 @@ export default function Hero() {
           <li>CLASSES</li>
           <li>CONTACT</li>
         </ul>
-        <div className="nav-logo">ARTISAAN</div>
+        <div className="nav-logo">YOUR LOGO</div>
       </nav>
-
       <main className="hero">
         <div className="hero-bg"></div>
         <div className="hero-circle">
           <div className="hero-content">
             <h1>
-              Elevate Craft.<br />
-              <span className="highlight"> Empower Artisans.</span>
+              Elevate Craft.<span className="highlight"> Empower Artisans.</span>
             </h1>
-            <div className="hero-desc"> An AI marketplace for India’s art & craft.</div>
-            <button className="hero-btn" onClick={() => navigate('/loginSignup')}>
-              Login / SignUp
-            </button>
-
+            <div className="hero-desc">
+              An AI marketplace for India’s art & craft.
+            </div>
+            <button className="hero-btn">Login / SignUp</button>
           </div>
         </div>
       </main>
-
     </div>
   );
 }
