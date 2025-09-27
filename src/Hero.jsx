@@ -8,10 +8,9 @@ export default function Hero() {
     <div className="page-shell">
       <nav className="navbar">
         <ul className="nav-links">
-          <li>HOME</li>
-          <li>INFO</li>
-          <li>CLASSES</li>
-          <li>CONTACT</li>
+          <li>Home</li>
+          <li>Feed</li>
+          <li>Contact Us</li>
         </ul>
         <div className="nav-logo">ARTISAAN</div>
       </nav>
@@ -34,29 +33,30 @@ export default function Hero() {
       </main>
 
 
-
-      <section className="app-intro-merged">
-        <h2>Paint the world with color of Art...</h2><br />
-        <p>
-          Artisaan is a one-stop platform empowering over 20 million Indian artisans through:
-        </p>
-          AI-powered tools that generate professional listings and authentic storytelling <br />
-          Support for 22+ Indian languages and voice-driven interactions, breaking digital barriers <br />
-          Dynamic market intelligence for pricing, demand forecasting and inventory insights <br />
-          A commitment to preserving centuries-old craft heritage globally through storytelling <br />
-        <p>
-          By bridging traditional arts with modern technology, Artisaan revolutionizes artisan reach and livelihood in an eco-friendly and culturally conscious manner.
-        </p>
-      </section>
+<section className="app-intro-split">
+  <div className="intro-content"><br />
+    <h2>Paint the world with color of Art...</h2><br />
+    <p>
+      <b>Artisaan empowers millions of Indian artisans with AI-crafted listings, regional language support, and a welcoming digital marketplace</b>.
+    </p>
+      Smart, story-driven product displays <br />
+      Voice and local language ready <br />
+      Community-powered discovery <br />
+      Actionable, artisan-first market insights <br /><br /><br />
+  </div>
+  <div className="intro-media">
+    <img src="/assets/shape.png" alt="Artisan Blob" />
+  </div>
+</section>
 
 
 
       <section className="art-gallery">
-  <h2 className="gallery-title">Our Bestsellings ...</h2><br />
+  <h2 className="gallery-title">Our Bestsellings ...</h2><br /><br />
   <div className="gallery-grid">
     <div className="gallery-card">
       <div className="img-wrap">
-        <img src="./assets/pottery1.jpg" alt="Vintage Pottery Jug" />
+        <img src="/assets/11.jpg" alt="Vintage Pottery Jug" />
       </div>
       <div className="gallery-meta">
         <span className="meta-by">By Tribeworks</span>
@@ -70,7 +70,7 @@ export default function Hero() {
     </div>
     <div className="gallery-card">
       <div className="img-wrap">
-        <img src="./assets/artblock1.jpg" alt="Madhubani Folk Art Block" />
+        <img src="/assets/12.jpg" alt="Madhubani Folk Art Block" />
       </div>
       <div className="gallery-meta">
         <span className="meta-by">By Folk Collective</span>
@@ -84,7 +84,7 @@ export default function Hero() {
     </div>
     <div className="gallery-card">
       <div className="img-wrap">
-        <img src="./assets/textile1.jpg" alt="Blockprint Stole" />
+        <img src="/assets/13.jpg" alt="Blockprint Stole" />
       </div>
       <div className="gallery-meta">
         <span className="meta-by">By ShilpSutra</span>
@@ -98,7 +98,7 @@ export default function Hero() {
     </div>
     <div className="gallery-card">
       <div className="img-wrap">
-        <img src="./assets/woodtoys1.jpg" alt="Wooden Elephant Toy" />
+        <img src="/assets/14.jpg" alt="Wooden Elephant Toy" />
       </div>
       <div className="gallery-meta">
         <span className="meta-by">By Karigar Krafts</span>
@@ -112,6 +112,28 @@ export default function Hero() {
     </div>
   </div>
 </section>
+
+
+
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-brand">ARTISAAN</div>
+        <nav className="footer-nav">
+          <a href="#home" className="footer-link">Home</a>
+          <a href="#about" className="footer-link">About</a>
+          <a href="#contact" className="footer-link">Contact</a>
+          <a href="#privacy" className="footer-link">Privacy Policy</a>
+        </nav>
+        <div className="footer-social">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="social-link">Instagram</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="social-link">Facebook</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="social-link">Twitter</a>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        © 2025 Artisaan. All rights reserved.
+      </div>
+    </footer>
 
 
     </div>

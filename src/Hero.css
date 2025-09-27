@@ -1,8 +1,7 @@
 .page-shell {
-  background-color: #ffe5c2;
   min-height: 100vh;
   width: 100vw;
-  background: #fff;
+  background: #ffe5c2;
   overflow-x: hidden;
 }
 
@@ -175,10 +174,10 @@
 .gallery-title {
   font-size: 2.42rem;
   font-family: 'Trebuchet MS', Arial, sans-serif;
-  color: #ffa600;
+  color: #000000;
   font-weight: 800;
   margin-bottom: 2.45rem;
-  text-align: left;
+  text-align: center;
   letter-spacing: 0.01em;
 }
 
@@ -263,7 +262,7 @@
 }
 
 .meta-price {
-  color: #ffa600;
+  color: #000000aa;
   font-size: 1.19rem;
   font-weight: 700;
 }
@@ -308,81 +307,158 @@
 }
 
 
-.app-intro-merged {
-  max-width: 1050px;
-  margin: 5rem auto 6rem auto;
-  padding: 3.2rem 2rem;
-  background-color: #a9322640; /* soft red translucent as requested */
-  border-radius: 22px;
-  box-shadow: 0 10px 48px #fc8772 inset;
-  color: #1a130c; /* dark warm black for text */
-  font-family: 'Trebuchet MS', Arial, sans-serif;
+.app-intro-split {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 300px;
+  background: #fde2bd;
+  max-width: 1250px;
+  margin: 0 auto 0 auto;
+  box-sizing: border-box;
+  padding: 2.2rem 2vw;
+  gap: 2rem;
+}
+
+.intro-content {
+  flex: 7;
+  color: #2b1610;
   text-align: center;
-  font-weight: 500;
-  font-size: 1.13rem;
-  line-height: 1.52;
-  user-select: text; /* selectable text */
+  padding: 3.5vw;
+  line-height: 1.82;
 }
-
-.app-intro-merged h2 {
-  color: #1c0f07;
+.intro-content h2 {
+  font-size: 2.1rem;
   font-weight: 900;
-  font-size: 2.75rem;
-  margin-bottom: 1.8rem;
-  letter-spacing: 0.05em;
-  text-shadow: 0 1px 4px #cca495aa;
+  margin-bottom: 1.1rem;
+  letter-spacing: 0.04em;
 }
-
-.app-intro-merged p {
-  margin-bottom: 1.8rem;
+.intro-content p {
+  font-size: 1.13rem;
+  margin-bottom: 1.1rem;
 }
-
-.app-intro-merged ul {
-  margin-left: 1.4rem;
-  margin-bottom: 2.2rem;
-  list-style-type: disc;
-  color: #3e2517;
+.intro-content ul {
+  margin: 0.3rem 0 0 1.2rem;
+  padding: 0;
+}
+.intro-content ul li {
+  font-size: 1.11rem;
+  line-height: 1.55;
+  margin-bottom: 0.55rem;
+  color: #b0562c;
   font-weight: 600;
+  letter-spacing: 0.015em;
+  transition: color 0.3s, text-shadow 0.28s;
+}
+.intro-content ul li:hover {
+  color: #de5e33;
+  text-shadow: 0 8px 24px #fc877280;
 }
 
-.app-intro-merged ul li {
-  margin: 0.55rem 0;
+.intro-media {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+}
+.intro-media img {
+  width: 100%;
+  min-width: 80px;
+  max-width: 215px;
+  filter: drop-shadow(0 18px 38px #fc877228);
+  transition: transform 0.3s cubic-bezier(.38,1.12,.41,1.02);
 }
 
-@media (max-width: 700px) {
-  .app-intro-merged {
-    margin: 3.5rem auto 4.5rem auto;
-    padding: 2rem 1.2rem;
-    font-size: 1rem;
+.intro-media img:hover {
+  transform: scale(1.07) rotate(-5deg);
+  filter: drop-shadow(0 28px 70px #fc877299);
+}
+
+@media (max-width: 900px) {
+  .app-intro-split {
+    flex-direction: column;
+    gap: 1.3rem;
+    min-height: unset;
+    padding: 1.2rem 0.7rem;
+    border-radius: 18px;
   }
-  .app-intro-merged h2 {
-    font-size: 2.1rem;
-    margin-bottom: 1.4rem;
+  .intro-content {
+    text-align: center;
+    padding-right: 0;
   }
 }
 
-.app-intro-merged {
-  /* existing styles */
-  transition: transform 0.35s ease, box-shadow 0.35s ease, background-color 0.4s ease;
-  cursor: default;
+.footer {
+  background-color: #000;
+  color: #ffe099;
+  padding: 2.6rem 2rem 1.6rem 2rem;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  user-select: none;
 }
 
-.app-intro-merged:hover {
-  transform: translateY(-12px) scale(1.02);
-  box-shadow:
-    0 14px 55px #fc877233 inset,
-    0 0 24px #fc877299;
-  background-color: #ba342d4a; /* slightly more intense deep red translucent */
-  cursor: pointer;
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.app-intro-merged p,
-.app-intro-merged ul li {
-  transition: color 0.3s ease;
+.footer-logo {
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: #ffd94f;
+  letter-spacing: 0.12em;
 }
-.app-intro-merged:hover p,
-.app-intro-merged:hover ul li {
-  color: #2d150d;
+
+.footer-nav {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.footer-link {
+  color: #ffe099cc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  text-transform: uppercase;
+}
+
+.footer-link:hover {
+  color: #ffd94f;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.social-link {
+  color: #ffe09a99;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #ffd94f;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1.5px solid #42390477;
+  padding-top: 1.4rem;
+  font-size: 0.85rem;
+  color: #ffe099aa;
 }
 
 
