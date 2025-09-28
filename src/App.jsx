@@ -1,5 +1,5 @@
 import Hero from './Hero';
-import LoginSignup from './LoginSignup';
+import LoginSignup from './LoginSignup'; // Make sure this path is correct
 
 function App() {
   return (
